@@ -35,7 +35,6 @@ andThen = (parser1, parser2) => (
       return [(input.length - restInput1.length) + res2[0],res2[1]]
     const [secondParsed,restInput2] = res2
     return [[firstParsed,secondParsed],restInput2]
-    //TODO maybe? return [[firstParsed,secondParsed].flat(Infinity),restInput2]
   }
 )
 
